@@ -13,7 +13,7 @@ workflow "Deploy on Now" {
 action "deploy" {
   uses = "actions/zeit-now@master"
   secrets = [
-    "ZEIT_TOKEN",
+    "NOW_TOKEN",
   ]
 }
 
@@ -22,7 +22,7 @@ action "alias" {
   uses = "actions/zeit-now@master"
   args = "alias"
   secrets = [
-    "ZEIT_TOKEN",
+    "NOW_TOKEN",
   ]
 }
 ```
@@ -31,7 +31,7 @@ For more examples, visit: [actions/example-zeit-now](https://github.com/actions/
 
 ### Secrets
 
-* `ZEIT_TOKEN` - **Required**. The token to use for authentication with the ZEIT Now API ([more info](https://zeit.co/blog/introducing-api-tokens-management))
+- `NOW_TOKEN` - **Required**. The token to use for authentication with the ZEIT Now API ([more info](https://zeit.co/blog/introducing-api-tokens-management))
 
 ## License
 
